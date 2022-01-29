@@ -1,5 +1,5 @@
 
-with open("newwords_dupesremoved.txt", 'r') as f:
+with open("words.txt", 'r') as f:
 	words = [line.rstrip() for line in f]
 
 firstguess = "tares"
