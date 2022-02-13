@@ -1,5 +1,5 @@
 
-with open("words.txt", 'r') as f:
+with open("words2.txt", 'r') as f:
 	words = [line.rstrip() for line in f]
 
 firstguess = "tares"
@@ -12,11 +12,11 @@ c = 0
 while len(words) > 1:
 
 	# print out words if less than 7 possible words left
-	if len(words) < 7:
-		r = ""
-		for word in words:
-			r += word + " "
-		print("Possible words remaining: " + r)
+	#if len(words) < 7:
+	#	r = ""
+	#	for word in words:
+	#		r += word + " "
+	#	print("Possible words remaining: " + r)
 	curr = words[0]
 	inp = input("Please input " + curr + " and enter result: ")
 
